@@ -1,0 +1,94 @@
+---
+title: "Navigating Python Modules"
+---
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- How do Python modules work and how can we determine if a module will perform the functions we want?
+- How can we navigate module documentation and prepare our data for analysis according to the specifications?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand the TextBlob module: determine from the documentation what kind of functions it performs and how to access and use them.
+- Prepare data for use within the TextBlob module
+
+:::::::::::::::::::::::::::::::::::::: 
+
+## Introduction
+
+As we discussed in the last episode, a Python module is a collection of functions designed to interact with each other to achieve a purpose, built within a specific unified piece of software.
+
+There are more than 450,000 modules in Python script in existence, each with their own functions and purposes. If you know how to navigate the information about a module, you can, in theory, use any one of them you wish. Today we will be studying and using the TextBlob module as a case study.
+
+:::::::::::::::::::::::::::::::::::::: 
+
+## TextBlob
+
+Most modules have documentation which is freely available to the user. [Python.org](https://docs.python.org/3/library/index.html) contains documentation on its main 250 modules. Additionally, there is the [Python Package Index](https://pypi.org/), which is a searchable database of all Python packages in existence. [Textblob](https://pypi.org/project/textblob/) is in this index.
+
+The information contained in the index is not enough for us to get started using TextBlob. We need more thorough instructions. Therefore we go to the homepage for TextBlob, and a bit of looking shows us that we have a [Quickstart Guide](https://textblob.readthedocs.io/en/dev/quickstart.html#quickstart). This guide gives a grounded overview of the main functions of the module, and allows you to try out some of the code. Textblob also has its own [GitHub repository](https://github.com/sloria/textblob), in which you can find the source code for the entire module. More advanced users and those wanting to learn how to code in a more varied way will benefit from looking at the source code of various modules to see how it works.
+
+:::::::::::::::::::::::::::::::::::::: 
+
+## The Structure of Python Code
+
+In the next episode, when we work with some actual TextBlob commands, our workflow will look different from what one sees when one reads text in a Python module. Python modules are written around specific functions which are run together. Let's take a [look](https://github.com/sloria/TextBlob/blob/dev/textblob/classifiers.py) at the source code for an example.
+
+Here you can see that the code is arranged in the following ways:
+1. There is an example for how to use this kind of function at the very top (lines 1-33).
+2. Modules often use other modules within their own code. Lines 34-44 show these modules as they are imported into the code.
+3. Below line 46 ('Basic Feature Extractors') we see lists of the basic features for this subsection of the software. We see the word 'def' and then various instructions. These define specific actions that are possible within the module. Let's explore and try to interpret them. 
+4. At the end of a 'def' statement we see the word 'return' and then some more specifications. This tells the computer to perform a function and then return, or in human speech, display, the results of that function.
+5. On line 109 we see the heading 'Classifiers'. Classifiers are instructions for creating objects in Python that can be analysed. They are different from functions. For now we will avoid looking at these too closely.
+
+For another example, I will show you a program I wrote which lines up texts and measures textual differences between two sentences. Can you determine the structure of my code and get a sense of what it does?
+
+:::::::::::::::::::::::::::::::::::::: 
+
+## Prepping to Use the TextBlob Module: Data Preparation
+
+Let's say we have determined that TextBlob is the best module for our purposes. We have read in the documentation that it can perform various analyses on a text (or texts) and we want to try out some of its functions. However, we have to have data to analyse first!
+
+How do we prepare data for a specific module? Not every module uses data in the same way. For example, my own program reads data from .txt files stored on my hard drive. How can we find out how TextBlob reads data?
+
+On the first page of the documentation, we can see an example of analysis. Let's look at that more closely.
+This shows that TextBlob accepts you setting a text as a variable: meaning, that if you say text = '''   ''', whatever goes between the quotation marks will be read by the computer as the data to analyse.
+
+Some programs will tell the computer to look for text = ''' ''' in a file on your computer. The result is the same: the computer has a 'text' as a variable to analyse. In this case, variable just means the thing that the computer will perform functions on. We could put a string of numbers in here, but the results might not make sense. It's best we use a text. 
+
+:::::::::::::::::::::::::::::::::::::: 
+
+## Data Cleaning
+
+One of the most important principles beginning coders need to know is that they must have clean data. A computer will only do exactly what you tell it with the data you give it. If your data is incorrect, sloppy, contains mistakes that you made, etc., it will affect the results of your analysis or even cause an error!
+
+The documentation gives a sample of text: 
+"The titular threat of The Blob has always struck me as the ultimate movie
+monster: an insatiably hungry, amoeba-like mass able to penetrate
+virtually any safeguard, capable of--as a doomed doctor chillingly
+describes it--"assimilating flesh on contact.
+Snide comparisons to gelatin be damned, it's a concept with the most
+devastating of potential consequences, not unlike the grey goo scenario
+proposed by technological theorists fearful of
+artificial intelligence run rampant."
+
+Let's assume that sample is clean. Now let's take this sample, and say that capitalisation and punctuation needs to be correct and like an edited text, for whatever analysis we are doing:
+
+"The titular thReat of The Blob haS always strUck me as the uLtimate moviE
+monster: an insatiably hungry, amoeba-like mass able to penetrate
+virTualLy any safeguard... capable Of--as a doomed! doctor Chillingly
+describes it--"assimilating Flesh on contact.
+Snide comparisons to GELATIN be damned, it's a concept with the most
+devasTating of potential Consequences, not unliKe the grey Goo scenario???
+proPosEd by ,,,, technoloGical theoristS fearful of
+artificial Intelligence ruN RAMPANT.!!!!?..."
+
+In this case, there appear to be typos in the data which could affect the analysis. We have to always make sure that the data we tell the computer to read and perform functions on is the data that we want. While this is an exaggerated example, having 'dirty' data is often a huge problem and a time sink for Digital Humanities projects.
+
+The same goes for file names: if your module requires you to tell it to read a series of files, the names need to be:
+1. Consistent
+2. Sensible (they must make sense to you and to others who may use them!)
+3. Preferably easy to type!
+
+Here is an example of some files I am currently working with. Note the consistency of the filenames. It is remarkably easy to mess this up and cause yourself headaches when you start analysing larger datasets, so it's best to learn this principle at the beginner stage!
