@@ -33,10 +33,10 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Carpentries Incubator" src="assets/images/incubator-logo.svg"><abbr class="icon" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="text-decoration: unset">
-           
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #383838">Pre-Alpha
-            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="color: #FF4955; border-radius: 5px"></i>
+        <img alt="Carpentries Incubator" src="assets/images/incubator-logo.svg"><abbr class="badge badge-light" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="background-color: #FF4955; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #000">
+            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
+            Pre-Alpha
           </a>
           <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
         </abbr>
@@ -57,7 +57,7 @@
     </div>
   </div>
   <hr></header><nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav incubator" aria-label="Main Navigation"><div class="container-fluid nav-container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
     </button>
@@ -69,7 +69,7 @@
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
-      <i role="img" aria-label="search button" data-feather="search"></i>
+        <i role="img" aria-label="search button" data-feather="search"></i>
       -->
     </div>
     <div class="desktop-nav">
@@ -123,7 +123,7 @@
         <!-- START: inst/pkgdown/templates/navbar.html -->
 <div id="sidebar-col" class="col-lg-4">
   <div id="sidebar" class="sidebar">
-      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle">
+      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle" data-collapse="Collapse " data-episodes="Episodes ">
           <i class="search-icon" data-feather="x" role="img"></i>
         </button>
         <div class="sidebar-inner">
@@ -166,22 +166,21 @@
               <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
 
                 <div class="accordion-body">
-                  <div class="accordion accordion-flush" id="accordionFlush1">
+                  <?xml version="1.0" encoding="UTF-8"?><div class="accordion accordion-flush" id="accordionFlush1">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading1">
-        <a href="index.html">Summary and Setup</a>
+      <a href="index.html">Summary and Setup</a>
     </div>
-<!--/div.accordion-header-->
-        
+    <!--/div.accordion-header-->
   </div>
-<!--/div.accordion-item-->
+  <!--/div.accordion-item-->
 </div>
 <!--/div.accordion-flush-->
 
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using RMarkdown</a>
+        <a href="introduction.html">1. First Steps in Coding with Python</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -244,13 +243,13 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using RMarkdown</a></p>
+<section id="aio-introduction"><p>Content from <a href="introduction.html">First Steps in Coding with Python</a></p>
 <hr>
-<p> Last updated on 2023-10-18 | 
+<p>Last updated on 2023-12-19 |
         
         <a href="https://github.com/CambridgeDH/first_steps_python/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 <div class="overview card">
 <h2 class="card-header">Overview</h2>
@@ -260,8 +259,14 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using R Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>How do you get started coding with the Python programming
+language?</li>
+<li>What are the basic principles of coding and using modules in
+Python?</li>
+<li>What is a Jupyter Notebook and how can we use it to study coding and
+test our code?</li>
+<li>How can we use the Python module Textblob to perform some basic text
+analysis?</li>
 </ul>
 </div>
 </div>
@@ -271,171 +276,128 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with the new lesson template</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Understand what Python is, and the difference between coding and
+programming.</li>
+<li>Preview the objectives of the entire course</li>
+<li>Learn to install Anaconda</li>
+<li>Understand what Jupyter Notebooks are</li>
+<li>Learn to install a Python module within Jupyter notebooks</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson template:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
-</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Output
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
-</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Show me the solution
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section id="figures"><h2 class="section-heading">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can also include figures generated from R Markdown:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pie</span><span class="op">(</span></span>
-<span>  <span class="fu">c</span><span class="op">(</span>Sky <span class="op">=</span> <span class="fl">78</span>, <span class="st">"Sunny side of pyramid"</span> <span class="op">=</span> <span class="fl">17</span>, <span class="st">"Shady side of pyramid"</span> <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>, </span>
-<span>  init.angle <span class="op">=</span> <span class="fl">315</span>, </span>
-<span>  col <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"deepskyblue"</span>, <span class="st">"yellow"</span>, <span class="st">"yellow3"</span><span class="op">)</span>, </span>
-<span>  border <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span><span class="op">)</span></span></code></pre>
-</div>
-<figure style="text-align: center"><img src="fig/introduction-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid" class="figure mx-auto d-block"><figcaption>
-Sun arise each and every morning
-</figcaption></figure><p>Or you can use standard markdown for static figures with the
-following syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><figcaption>You belong in The Carpentries!</figcaption></figure><div id="callout1" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
-<div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
-</div>
-</div>
-</div>
-</section><section id="math"><h2 class="section-heading">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
-<div class="callout-content">
+<p>This course will teach you the fundamental principles of coding and
+with doing automated analysis of textual data in the programming
+language Python. It will provide you with a solid foundation of
+knowledge about working with programming languages, data, and modules
+that you can carry away to apply to your own projects. It is not
+intended as an exhaustive course on the Python language itself, but
+instead is a preparatory course which will provide you with the tools
+you need to begin the process of learning how to code.</p>
+<p>This course teaches coding principles using the Python programming
+language, which is a very popular general purpose programming language.
+It is the language most commonly used in the Digital Humanities, and
+powerful modules (a set of functions which perform specific tasks) for
+advanced analysis of textual data (including modules for NLP, or Natural
+Language Processing). It is different from another programming language
+popular in both the Digital Humanities and the Sciences, R, which is a
+language that was primarily developed for statistics and producing
+graphical visualisations of data. It is common for people working in
+Digital Humanities to work with both languages.</p>
+<p>In this course we will be focusing on learning some basic coding
+skills. Coding is a part of programming, and it involves writing
+commands that a computer can understand and execute. The primary
+difference between coding and programming is that programming involves
+writing full computer programs (it is a part of software development)
+which use code as their building blocks to solve a problem or perform a
+complex set of actions. One cannot become a programmer without learning
+how to write code.</p>
+<p>When you write a line of code, you are writing instructions in a form
+which the computer can understand and execute.</p>
+<p>Given the short length of this course, the aim is to learn the
+fundamentals which will carry you furthest in your goal to learn how to
+code. We will cover the following areas in today’s lesson:</p>
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>How to access and work with Python on your machine through Jupyter
+Notebooks</li>
+<li>How to install a Python module</li>
+<li>How to prepare textual data for automated analysis</li>
+<li>How to interpret the documentation and code within a Python module
+and tailor it to your own needs.</li>
+<li>How to write simple commands using the language of a Python module
+in order to analyse a text.</li>
+<li>How to export the results of a Python script into another file
+format</li>
 </ul>
 </div>
 </div>
 </div>
-<!-- 
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use. 
- -->
-</section></section>
+</div>
+</div>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+<div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>How to Install Python using Anaconda Navigator</h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
+<p>Anaconda is a software distribution which includes the Python
+programming language and a large amount of modules and applications
+within a single installation. Today we will be installing Python using
+Anaconda, and then using the Navigator (an application installed by
+Anaconda) to access some of these features.</p>
+<p>Anaconda can be installed easily by following the tutorials below
+(specific to each operating system):</p>
+<ul>
+<li><a href="https://docs.anaconda.com/free/anaconda/install/windows/" class="external-link">Windows</a></li>
+<li><a href="https://docs.anaconda.com/free/anaconda/install/mac-os/" class="external-link">Mac</a></li>
+<li><a href="https://docs.anaconda.com/free/anaconda/install/linux/" class="external-link">Linux</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2 Navigating">
+<h2 id="how-to-access-jupyter-notebooks">How to Access Jupyter Notebooks<a class="anchor" aria-label="anchor" href="#how-to-access-jupyter-notebooks"></a>
+</h2>
+<p>When you open the Anaconda Navigator application you will be able to
+see a selection of applications from which to choose, one of which is
+Jupyter Notebooks. Click ‘Launch’. <img src="fig/locating-jupyter-notebooks.png" alt="A screenshot of the Anaconda Navigator page with options for different applications" class="figure">
+A webpage will open with a list of the files you have in your local
+folder. To the right you will see a dropdown button, ‘New’. You then can
+click on ‘Python 3 (ipykernel)’ to open a new Jupyter Notebook. <img src="fig/open-jupyter-notebook.png" alt="Image showing the home page of Jupyter Notebooks with the dropdown box for opening a new notebook" class="figure"></p>
+<p>This will create a new, empty Jupyter Notebook. This notebook is made
+up of cells in which you can write, try out, and execute code. These
+notebooks are highly versatile and are the ideal environment for
+learning how to write code, as you can run the command and see the
+outputs right within the notebook. You can explore the different options
+and possible actions in the menu on the left. <img src="fig/empty-jupyter-notebook.png" alt="image showing what an empty Jupyter Notebook page looks like" class="figure"> We
+will be writing all of our code in this Jupyter Notebook. Be sure to
+save it (it will remain on your local hard drive) so that you can access
+and work with this code later.</p>
+</div>
+<div class="section level2 Installation">
+<h2 id="installing-a-python-module">Installing a Python Module<a class="anchor" aria-label="anchor" href="#installing-a-python-module"></a>
+</h2>
+<p>A ‘module’ in Python is a collection of functions that a software
+developer has put together in code, for a specific purpose. It is akin
+to a ‘library’ of instructions that a computer uses to perform certain
+actions. However, Python calls such libraries ‘modules’, not ‘packages’
+or ‘libraries’.</p>
+<p>In this course we will be using the module Textblob. While Anaconda
+comes with around 250 Python modules pre-installed, Textblob is not one
+of them. To see if a module is already installed, you can run the
+‘import’ command in a cell: <img src="fig/checking-installation.png" alt="image of a Jupyter Notebook cell that shows that the package textblob is not installed" class="figure"></p>
+<p>In this case, we will want to install the module. We run the
+following command within the cell: <img src="fig/installing-textblob.png" alt="figure showing what the command and output for installing a Python module should look like" class="figure"></p>
+<p>For those curious: the ! in the command tells Jupyter Notebooks that
+this is an action to be performed on your actual machine. ‘pip’ is
+Python’s package manager. Put together, they tell your computer to
+install the package that you tell it to install right after.</p>
+<p>Once a package is installed, you need to import it to be able to use
+it in a Notebook. From the module ‘textblob’ we will import the object
+‘TextBlob’: <img src="fig/importing-textblob.png" alt="image showing the command for importing an already installed Python module" class="figure"></p>
+<p>If successful, <strong>nothing</strong> will appear except a new cell
+in your notebook.</p>
+</div></section>
 </div>
     </main>
 </div>
@@ -445,13 +407,13 @@ any links that you are not going to use.
 <!--/div.row-->
       		<footer class="row footer mx-md-3"><hr>
 <div class="col-md-6">
-				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
+        <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
         <a href="https://github.com/CambridgeDH/first_steps_python/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/CambridgeDH/first_steps_python/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/CambridgeDH/first_steps_python/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/CambridgeDH/first_steps_python/" class="external-link">Source</a></p>
 				<p><a href="https://github.com/CambridgeDH/first_steps_python/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:eja62@cam.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
@@ -459,16 +421,14 @@ any links that you are not going to use.
         
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
-        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.0" class="external-link">sandpaper (0.14.0)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.7.1" class="external-link">pegboard (0.7.1)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.3.1" class="external-link">varnish (0.3.1)</a>.</p>
+        <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.1" class="external-link">sandpaper (0.16.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
-			<i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back to top"></i><br><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
+      <i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back To Top"></i><br><!-- <span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top --><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
 		</a>
 	</div>
   <script type="application/ld+json">
@@ -483,9 +443,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://CambridgeDH.github.io/first_steps_python/aio.html",
   "identifier": "https://CambridgeDH.github.io/first_steps_python/aio.html",
-  "dateCreated": "2023-11-05",
-  "dateModified": "2023-11-05",
-  "datePublished": "2023-11-05"
+  "dateCreated": "2023-12-19",
+  "dateModified": "2023-12-19",
+  "datePublished": "2023-12-19"
 }
 
   </script><script>
