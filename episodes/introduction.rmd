@@ -19,7 +19,6 @@ title: "First Steps in Coding with Python"
 - Understand what Jupyter Notebooks are
 - Learn to install a Python module within Jupyter notebooks
 
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction: What is Python?
 
@@ -27,7 +26,6 @@ This course will teach you the fundamental principles of coding and with doing a
 
 This course teaches coding principles using the Python programming language, which is a very popular general purpose programming language. It is the language most commonly used in the Digital Humanities, and powerful modules (a set of functions which perform specific tasks) for advanced analysis of textual data (including modules for NLP, or Natural Language Processing). It is different from another programming language popular in both the Digital Humanities and the Sciences, R, which is a language that was primarily developed for statistics and producing graphical visualisations of data. It is common for people working in Digital Humanities to work with both languages.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## What is the difference between coding and programming?
 
@@ -35,7 +33,6 @@ In this course we will be focusing on learning some basic coding skills. Coding 
 
 When you write a line of code, you are writing instructions in a form which the computer can understand and execute.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## This Course's Objectives
 
@@ -47,6 +44,7 @@ Given the short length of this course, the aim is to learn the fundamentals whic
 - How to interpret the documentation and code within a Python module and tailor it to your own needs.
 - How to write simple commands using the language of a Python module in order to analyse a text.
 - How to export the results of a Python script into another file format
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::::::::: spoiler
 
@@ -62,6 +60,7 @@ Anaconda can be installed easily by following the tutorials below (specific to e
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::: Navigating
 ## How to Access Jupyter Notebooks
 
 When you open the Anaconda Navigator application you will be able to see a selection of applications from which to choose, one of which is Jupyter Notebooks. Click 'Launch'. ![Finding Jupyter Notebooks](fig/locating-jupyter-notebooks.png){alt="A screenshot of the Anaconda Navigator page with options for different applications"} A webpage will open with a list of the files you have in your local folder. To the right you will see a dropdown button, 'New'. You then can click on 'Python 3 (ipykernel)' to open a new Jupyter Notebook. ![Opening Jupyter Notebooks](fig/open-jupyter-notebook.png){alt="Image showing the home page of Jupyter Notebooks with the dropdown box for opening a new notebook"}
@@ -71,6 +70,7 @@ We will be writing all of our code in this Jupyter Notebook. Be sure to save it 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::::::::: Installation
 ## Installing a Python Module
 
 A 'module' in Python is a collection of functions that a software developer has put together in code, for a specific purpose. It is akin to a 'library' of instructions that a computer uses to perform certain actions. However, Python calls such libraries 'modules', not 'packages' or 'libraries'.
@@ -86,3 +86,4 @@ For those curious: the ! in the command tells Jupyter Notebooks that this is an 
 Once a package is installed, you need to import it to be able to use it in a Notebook. From the module 'textblob' we will import the object 'TextBlob': ![Importing an installed package](fig/importing-textblob.png){alt="image showing the command for importing an already installed Python module"}
 
 If successful, **nothing** will appear except a new cell in your notebook. 
+::::::::::::::::::::::::::::::::::::::::::::::::::
