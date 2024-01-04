@@ -21,12 +21,12 @@ title: "First Steps in Coding with Python"
 
 ## This Course's Objectives
 
-Given the short length of this course, the aim is to learn the fundamentals which will carry you furthest in your goal to learn how to code. We will cover the following areas in today's lesson:
+Given the short length of this course, this course will convey the fundamentals that will carry you the furthest in your goal to learn coding. We will cover the following areas in this lesson:
 
-- How to access and work with Python on your machine through Jupyter Notebooks
+- How to access Python on your machine through Jupyter Notebooks
 - How to install a Python module
 - How to prepare textual data for automated analysis
-- How to interpret the documentation and code within a Python module and tailor it to your own needs.
+- Basic fundamentals of interpreting the documentation and code within a Python module and tailoring it to your own needs.
 - How to write simple commands using the language of a Python module in order to analyse a text.
 - How to export the results of a Python script into another file format
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -35,15 +35,15 @@ Given the short length of this course, the aim is to learn the fundamentals whic
 
 ## What is Python? 
 
-This course will teach you the fundamental principles of coding and with doing automated analysis of textual data in the programming language Python. It will provide you with a solid foundation of knowledge about working with programming languages, data, and modules that you can carry away to apply to your own projects. It is not intended as an exhaustive course on the Python language itself, but instead is a preparatory course which will provide you with the tools you need to begin the process of learning how to code.
+This course will teach you the fundamental principles of coding and automatically analysing textual data in the programming language Python. It will provide you with a basic foundation of knowledge on programming languages, data, and modules that you can carry away to apply to your own projects. It is not intended as an exhaustive study of the Python language itself, but instead is a preparatory course which will provide you with the tools you need to begin the process of learning how to code.
 
-This course teaches coding principles using the Python programming language, which is a very popular general purpose programming language. It is the language most commonly used in the Digital Humanities, and powerful modules (a set of functions which perform specific tasks) for advanced analysis of textual data (including modules for NLP, or Natural Language Processing). It is different from another programming language popular in both the Digital Humanities and the Sciences, R, which is a language that was primarily developed for statistics and producing graphical visualisations of data. It is common for people working in Digital Humanities to work with both languages.
+This course teaches coding principles using the Python programming language, which is a very popular general purpose programming language. It is the language most commonly used in the Digital Humanities, and has many powerful modules (a set of functions which perform specific tasks) designed to conduct advanced analysis of textual data (including modules for NLP, or Natural Language Processing). It is different from another programming language that is popular in both the Digital Humanities and the Sciences, R. R is a more specialised language which was primarily developed for statistics and producing graphical visualisations of data. It is common for people working in Digital Humanities to work with both Python and R, so learning the fundamentals of one can help give you skills and knowledge to later extend to R.
 
 ## What is the difference between coding and programming?
 
-In this course we will be focusing on learning some basic coding skills. Coding is a part of programming, and it involves writing commands that a computer can understand and execute. The primary difference between coding and programming is that programming involves writing full computer programs (it is a part of software development) which use code as their building blocks to solve a problem or perform a complex set of actions. One cannot become a programmer without learning how to write code. 
+In this course we will focus on learning some basic coding skills. Coding is an integral part of programming: it involves writing the commands in a way that a computer can understand and execute. The primary difference between coding and programming is that programming involves writing full computer programs (as a part of software development). Such programs use code as the building blocks for software which is designed to solve a problem or perform a complex set of actions. One cannot become a programmer without learning how to write code. 
 
-When you write a line of code, you are writing instructions in a form which the computer can understand and execute.
+When you write a line of code, you are writing instructions in a form which the computer (through the Python interpreter) can understand and execute.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -51,7 +51,7 @@ When you write a line of code, you are writing instructions in a form which the 
 
 ## How to Install Python using Anaconda Navigator
 
-Anaconda is a software distribution which includes the Python programming language and a large amount of modules and applications within a single installation. Today we will be installing Python using Anaconda, and then using the Navigator (an application installed by Anaconda) to access some of these features. 
+Anaconda is a software distribution which includes the Python programming language as well as many modules and applications within a single installation. Today we will be installing Python using Anaconda, and then using an application within it, called the Navigator, to access some of these features. 
 
 Anaconda can be installed easily by following the tutorials below (specific to each operating system):
 
