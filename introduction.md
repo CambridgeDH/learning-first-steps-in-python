@@ -19,21 +19,6 @@ title: "First Steps in Coding with Python"
 - Understand what Jupyter Notebooks are
 - Learn to install a Python module within Jupyter notebooks
 
-
-## Introduction: What is Python?
-
-This course will teach you the fundamental principles of coding and with doing automated analysis of textual data in the programming language Python. It will provide you with a solid foundation of knowledge about working with programming languages, data, and modules that you can carry away to apply to your own projects. It is not intended as an exhaustive course on the Python language itself, but instead is a preparatory course which will provide you with the tools you need to begin the process of learning how to code.
-
-This course teaches coding principles using the Python programming language, which is a very popular general purpose programming language. It is the language most commonly used in the Digital Humanities, and powerful modules (a set of functions which perform specific tasks) for advanced analysis of textual data (including modules for NLP, or Natural Language Processing). It is different from another programming language popular in both the Digital Humanities and the Sciences, R, which is a language that was primarily developed for statistics and producing graphical visualisations of data. It is common for people working in Digital Humanities to work with both languages.
-
-
-## What is the difference between coding and programming?
-
-In this course we will be focusing on learning some basic coding skills. Coding is a part of programming, and it involves writing commands that a computer can understand and execute. The primary difference between coding and programming is that programming involves writing full computer programs (it is a part of software development) which use code as their building blocks to solve a problem or perform a complex set of actions. One cannot become a programmer without learning how to write code. 
-
-When you write a line of code, you are writing instructions in a form which the computer can understand and execute.
-
-
 ## This Course's Objectives
 
 Given the short length of this course, the aim is to learn the fundamentals which will carry you furthest in your goal to learn how to code. We will cover the following areas in today's lesson:
@@ -44,6 +29,22 @@ Given the short length of this course, the aim is to learn the fundamentals whic
 - How to interpret the documentation and code within a Python module and tailor it to your own needs.
 - How to write simple commands using the language of a Python module in order to analyse a text.
 - How to export the results of a Python script into another file format
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: Introduction
+
+## What is Python? 
+
+This course will teach you the fundamental principles of coding and with doing automated analysis of textual data in the programming language Python. It will provide you with a solid foundation of knowledge about working with programming languages, data, and modules that you can carry away to apply to your own projects. It is not intended as an exhaustive course on the Python language itself, but instead is a preparatory course which will provide you with the tools you need to begin the process of learning how to code.
+
+This course teaches coding principles using the Python programming language, which is a very popular general purpose programming language. It is the language most commonly used in the Digital Humanities, and powerful modules (a set of functions which perform specific tasks) for advanced analysis of textual data (including modules for NLP, or Natural Language Processing). It is different from another programming language popular in both the Digital Humanities and the Sciences, R, which is a language that was primarily developed for statistics and producing graphical visualisations of data. It is common for people working in Digital Humanities to work with both languages.
+
+## What is the difference between coding and programming?
+
+In this course we will be focusing on learning some basic coding skills. Coding is a part of programming, and it involves writing commands that a computer can understand and execute. The primary difference between coding and programming is that programming involves writing full computer programs (it is a part of software development) which use code as their building blocks to solve a problem or perform a complex set of actions. One cannot become a programmer without learning how to write code. 
+
+When you write a line of code, you are writing instructions in a form which the computer can understand and execute.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::::::::: spoiler
