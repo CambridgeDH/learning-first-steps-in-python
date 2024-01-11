@@ -1,5 +1,5 @@
 ---
-title: "First Steps in Coding with Python"
+title: "Introduction, Installation, and Anaconda"
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
