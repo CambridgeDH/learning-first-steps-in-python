@@ -64,9 +64,9 @@ Anaconda can be installed easily by following the tutorials below (specific to e
 :::::::::::::::::::::::::::::::::::::::::::::::: Navigating
 ## How to Access Jupyter Notebooks
 
-When you open the Anaconda Navigator application you will be able to see a selection of applications from which to choose, one of which is Jupyter Notebooks. Click 'Launch'. ![Finding Jupyter Notebooks](fig/locating-jupyter-notebooks.png){alt="A screenshot of the Anaconda Navigator page with options for different applications"} A webpage will open with a list of the files you have in your local folder. To the right you will see a dropdown button, 'New'. You then can click on 'Python 3 (ipykernel)' to open a new Jupyter Notebook. ![Opening Jupyter Notebooks](fig/open-jupyter-notebook.png){alt="Image showing the home page of Jupyter Notebooks with the dropdown box for opening a new notebook"}
+When you open the Anaconda Navigator application you will be able to see a selection of applications from which to choose, one of which is Jupyter Notebooks. Click 'Launch'. ![Finding Jupyter Notebooks](fig/locating-jupyter-notebooks.png){alt='A screenshot of the Anaconda Navigator page with options for different applications'} A webpage will open with a list of the files you have in your local folder. To the right you will see a dropdown button, 'New'. You then can click on 'Python 3 (ipykernel)' to open a new Jupyter Notebook. ![Opening Jupyter Notebooks](fig/open-jupyter-notebook.png){alt='Image showing the home page of Jupyter Notebooks with the dropdown box for opening a new notebook'}
 
-This will create a new, empty Jupyter Notebook. This notebook is made up of cells in which you can write, try out, and execute code. These notebooks are highly versatile and are the ideal environment for learning how to write code, as you can run the command and see the outputs right within the notebook. You can explore the different options and possible actions in the menu on the left. ![Showing an empty Jupyter Notebook](fig/empty-jupyter-notebook.png){alt="image showing what an empty Jupyter Notebook page looks like"} 
+This will create a new, empty Jupyter Notebook. This notebook is made up of cells in which you can write, try out, and execute code. These notebooks are highly versatile and are the ideal environment for learning how to write code, as you can run the command and see the outputs right within the notebook. You can explore the different options and possible actions in the menu on the left. ![Showing an empty Jupyter Notebook](fig/empty-jupyter-notebook.png){alt='image showing what an empty Jupyter Notebook page looks like'} 
 We will be writing all of our code in this Jupyter Notebook. Be sure to save it (it will remain on your local hard drive) so that you can access and work with this code later.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -76,15 +76,15 @@ We will be writing all of our code in this Jupyter Notebook. Be sure to save it 
 
 A 'module' in Python is a collection of functions that a software developer has put together in code, for a specific purpose. It is akin to a 'library' of instructions that a computer uses to perform certain actions. However, Python calls such libraries 'modules', not 'packages' or 'libraries'.
 
-In this course we will be using the module Textblob. While Anaconda comes with around 250 Python modules pre-installed, Textblob is not one of them. To see if a module is already installed, you can run the 'import' command in a cell: ![Checking if a module is installed](fig/checking-installation.png){alt="image of a Jupyter Notebook cell that shows that the package textblob is not installed"}
+In this course we will be using the module Textblob. While Anaconda comes with around 250 Python modules pre-installed, Textblob is not one of them. To see if a module is already installed, you can run the 'import' command in a cell: ![Checking if a module is installed](fig/checking-installation.png){alt='image of a Jupyter Notebook cell that shows that the package textblob is not installed'}
 
-In this case, we will want to install the module. We run the following command within the cell: ![Installing a Python module](fig/installing-textblob.png){alt="figure showing what the command and output for installing a Python module should look like"}
+In this case, we will want to install the module. We run the following command within the cell: ![Installing a Python module](fig/installing-textblob.png){alt='figure showing what the command and output for installing a Python module should look like'}
 
 
 
 For those curious: the ! in the command tells Jupyter Notebooks that this is an action to be performed on your actual machine. 'pip' is Python's package manager. Put together, they tell your computer to install the package that you tell it to install right after.
 
-Once a package is installed, you need to import it to be able to use it in a Notebook. From the module 'textblob' we will import the object 'TextBlob': ![Importing an installed package](fig/importing-textblob.png){alt="image showing the command for importing an already installed Python module"}
+Once a package is installed, you need to import it to be able to use it in a Notebook. From the module 'textblob' we will import the object 'TextBlob': ![Importing an installed package](fig/importing-textblob.png){alt='image showing the command for importing an already installed Python module'}
 
 If successful, **nothing** will appear except a new cell in your notebook. 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
